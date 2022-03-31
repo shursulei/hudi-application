@@ -12,7 +12,7 @@
     <artifactId>hudi-application-spark</artifactId>
 
     <properties>
-        <spark.version>2.3.0</spark.version>
+        <spark.version>2.4.5</spark.version>
         <cupid.sdk.version>3.3.8-public</cupid.sdk.version>
         <scala.version>2.11.8</scala.version>
         <scala.binary.version>2.11</scala.binary.version>
@@ -64,15 +64,9 @@
             <version>${scala.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.scala-lang</groupId>
-            <artifactId>scala-actors</artifactId>
-            <version>${scala.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-core</artifactId>
-            <version>2.12.1</version>
-            <scope>provided</scope>
+        <groupId>org.scala-lang</groupId>
+        <artifactId>scala-actors</artifactId>
+        <version>${scala.version}</version>
         </dependency>
     </dependencies>
 </project>
