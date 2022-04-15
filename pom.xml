@@ -11,6 +11,7 @@
     <modules>
         <module>hudi-application-common</module>
         <module>hudi-application-spark</module>
+        <module>hudi-application-flink</module>
     </modules>
 
     <properties>
