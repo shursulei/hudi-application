@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>hudi-application</artifactId>
+        <groupId>com.shursulei</groupId>
+        <version>1.0.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>hudi-application-java</artifactId>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <properties>
+        <spark.version>2.4.5</spark.version>
+        <cupid.sdk.version>3.3.8-public</cupid.sdk.version>
+        <scala.version>2.11.8</scala.version>
+        <scala.binary.version>2.11</scala.binary.version>
+        <hudi.version>0.10.1</hudi.version>
+        <!--        <hadoop.version>2.6.5</hadoop.version>-->
+    </properties>
+    <dependencies>
+                <dependency>
+                    <groupId>org.apache.hudi</groupId>
+                    <artifactId>hudi-common</artifactId>
+                    <version>${hudi.version}</version>
+                </dependency>
+        <dependency>
+            <groupId>org.apache.hudi</groupId>
+            <artifactId>hudi-client-common</artifactId>
+            <version>${hudi.version}</version>
+        </dependency>
+    </dependencies>
+</project>
