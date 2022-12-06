@@ -29,3 +29,4 @@ hudi-application-spark/src/main/resources/core-site.xml
 *.class
 
 hudi-application-spark/target
+
